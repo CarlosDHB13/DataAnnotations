@@ -1,0 +1,40 @@
+﻿@model WebApplication1.Models.ViewModels.Class1
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<form action="~/Home/Save/" method="post"
+    <div class="=row"
+         <br/><br/>
+         @Html.LabelFor(d => d.Nombre)
+         @Html.TextBoxFor(d => d.Nombre, "", new { @class = "form-control" })
+         @Html.ValidationMessageFor(d => d.Nombre, "", new { @class = "text-danger" })<br/><br />
+
+         @Html.LabelFor(d=>d.Correo)
+         @Html.TextBoxFor(d=>d.Correo, "", new { @class ="form-control"})
+         @Html.ValidationMessageFor(d=>d.Correo, "", new { @class = "text-danger" })<br/><br />
+
+         @Html.LabelFor(d=>d.Edad)
+         @Html.TextBoxFor(d=>d.Edad, "", new { @class ="form-control"})
+         @Html.ValidationMessageFor(d=>d.Edad, "", new { @class = "text-danger" })<br/><br />
+
+         @Html.LabelFor(d=>d.Codigo)
+         @Html.TextBoxFor(d=>d.Codigo, "", new { @class ="form-control"})
+         @Html.ValidationMessageFor(d=>d.Codigo, "", new { @class = "text-danger" })<br/><br />
+
+         @Html.LabelFor(d=>d.Precio)
+         @Html.TextBoxFor(d=>d.Precio, "", new { @class ="form-control"})
+         @Html.ValidationMessageFor(d=>d.Precio, "", new { @class = "text-danger" })<br/><br />
+
+         @Html.LabelFor(d=>d.Contrasena)
+         @Html.TextBoxFor(d=>d.Contrasena, "", new { @class ="form-control"})
+         @Html.ValidationMessageFor(d=>d.Contrasena, "", new { @class = "text-danger" })<br/><br />
+
+         @Html.LabelFor(d=>d.ConfirmContra)
+         @Html.TextBoxFor(d=>d.ConfirmContra, "", new { @class ="form-control"})
+         @Html.ValidationMessageFor(d=>d.ConfirmContra, "", new { @class = "text-danger" })<br/><br />
+
+
+           <input type="submit" />
+      </div>    
+</form>
